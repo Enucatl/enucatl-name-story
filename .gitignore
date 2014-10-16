@@ -2,3 +2,5 @@
 *.ps
 *.dvi
 *.log
+_site/
+.sass-cache/
