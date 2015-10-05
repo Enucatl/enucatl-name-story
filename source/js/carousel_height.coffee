@@ -1,6 +1,3 @@
----
----
-
 $ ->
     normalize_heights = ->
         items = $("#myCarousel .carousel-caption")

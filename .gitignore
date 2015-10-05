@@ -1,6 +1,3 @@
-*.aux
-*.ps
-*.dvi
-*.log
-_site/
-.sass-cache/
+Gemfile.lock
+*.rds
+build

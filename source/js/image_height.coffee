@@ -1,6 +1,3 @@
----
----
-
 $ ->
     $(".featurette-image").each ->
         cur_height = $(this).height()
