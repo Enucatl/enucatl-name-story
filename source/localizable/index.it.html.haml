@@ -64,7 +64,7 @@
   / Three columns of text below the carousel
   .row
     .col-lg-4
-      %img.img-circle{:alt => "Enucatl image", :src => "img/enucatl.jpg", :style => "width: 140px; height: 140px;"}/
+      = image_tag "/img/enucatl.jpg", :class => "img-circle", :alt => "Enucatl image", :style => "width: 140px; height: 140px;"
       %h2 Chi era Enucatl?
       %p
         Enucatl è il fratello di Quetzalcoatl, dal quale si distingue per la mancanza di piumaggio; è
@@ -72,10 +72,10 @@
         una tagliente coda biforcuta, una folta criniera sanguigna, un muso
         allungato di coccodrillo munito di micidiali zanne.
       %p
-        %a.btn.btn-default{:href => "enucatl.html", :role => "button"} Leggi tutto »
+        = link_to "/enucatl.html", "Leggi tutto »", {:class => "btn btn-default", :role => "button"} 
     / /.col-lg-4
     .col-lg-4
-      %img.img-circle{:alt => "Satrapame image", :src => "img/satrapame.jpg", :style => "width: 140px; height: 140px;"}/
+      = image_tag "/img/satrapame.jpg", :class => "img-circle", :alt => "Satrapame image", :style => "width: 140px; height: 140px;"
       %h2 Il buon Satrapàme
       %p
         noto, tra i numerosi sovrani aztechi, per aver posto fine al
@@ -83,10 +83,10 @@
         e alla furia inconoclasta che il suo predecessore, il tiranno
         Mauro, aveva scatenato nei confronti delle altre divinità.
       %p
-        %a.btn.btn-default{:href => "satrapame.html", :role => "button"} Leggi tutto »
+        = link_to "/satrapame.html", "Leggi tutto »", {:class => "btn btn-default", :role => "button"} 
     / /.col-lg-4
     .col-lg-4
-      %img.img-circle{:alt => "Tiranno\n            Mauro image", :src => "img/tirannomauro.jpg", :style => "width: 140px; height: 140px;"}/
+      = image_tag "/img/tirannomauro.jpg", :class => "img-circle", :alt => "Tiranno Mauro image", :style => "width: 140px; height: 140px;"
       %h2 Il sanguinario tiranno Mauro
       %p
         il suo nome non è azteco: furono gli spagnoli a
@@ -96,7 +96,7 @@
         d'animo) con cui egli veniva descritto da una popolazione, a
         distanza di due secoli, ancora terrorizzata.
       %p
-        %a.btn.btn-default{:href => "tirannomauro.html", :role => "button"} Leggi tutto »
+        = link_to "/tirannomauro.html", "Leggi tutto »", {:class => "btn btn-default", :role => "button"} 
     / /.col-lg-4
   / /.row
   / START THE FEATURETTES
@@ -116,11 +116,11 @@
         (robaccia), Bradorose (ascensore) e altri ancora hanno tale nobile
         origine.
     .col-md-5
-      %img.featurette-image.img-responsive{:alt => "Generic placeholder image", :src => "img/t9.jpg"}/
+      = image_tag "/img/t9.jpg", class: "featurette-image img-responsive", alt: "nokia t9"
   %hr.featurette-divider/
   .row.featurette
     .col-md-5
-      %img.featurette-image.img-responsive{:alt => "Aztec warrior from photobucket - Marquis477", :src => "http://i179.photobucket.com/albums/w293/marquis477/azteca3xp0.jpg"}/
+      = image_tag "http://i179.photobucket.com/albums/w293/marquis477/azteca3xp0.jpg", class: "featurette-image img-responsive", alt: "Aztec warrior from photobucket - Marquis477"
     .col-md-7
       %h2.featurette-heading
         Precolombiani in lotta per il
@@ -160,5 +160,5 @@
         = succeed "." do
           %a{:href => "http://it.wikipedia.org/wiki/Wikipedia:Bar/Discussioni/Possibile_bufala_in_serie"} bar di wikipedia
     .col-md-5
-      %img.featurette-image.img-responsive{:alt => "Aztec warrior from photobucket - Marquis477", :src => "http://upload.wikimedia.org/wikipedia/commons/b/b3/Wikipedia-logo-v2-en.svg"}/
+      = image_tag "http://upload.wikimedia.org/wikipedia/commons/b/b3/Wikipedia-logo-v2-en.svg", class: "featurette-image img-responsive", alt: "wikipedia"
   %hr.featurette-divider/
