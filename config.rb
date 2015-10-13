@@ -22,6 +22,8 @@ set :partials_dir, 'partials'
 
 set :haml, { :ugly => true }
 
+set :relative_links, true
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
