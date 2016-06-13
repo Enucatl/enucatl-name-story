@@ -11,4 +11,4 @@ $ ->
 
     $(window).on "resize orientationchange", normalize_heights
 
-    normalize_heights()
+    #normalize_heights()

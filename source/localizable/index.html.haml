@@ -1,0 +1,97 @@
+/ Carousel
+.container
+  .row
+    .intro-text.col-lg-12
+      .carousel
+        %blockquote
+          %h3
+            = I18n.t(:cotton1)
+          %footer
+            = I18n.t(:cotton2) 
+        %blockquote
+          %h3
+            = I18n.t(:madaki1)
+          %footer
+            = I18n.t(:madaki2)
+        %blockquote
+          %h3
+            = I18n.t(:frieda1)
+          %footer
+            = I18n.t(:frieda2)
+        %blockquote
+          %h3
+            = I18n.t(:sogeking1)
+          %footer 
+            = I18n.t(:sogeking2)
+
+/
+  Marketing messaging and featurettes
+  \==================================================
+/ Wrap the rest of the page in another container to center all the content.
+.container.marketing
+  / Three columns of text below the carousel
+  .row
+    .col-lg-4
+      = image_tag "enucatl.jpg", :class => "img-circle", :alt => "Enucatl image", :style => "width: 140px; height: 140px;"
+      %h2 
+        = I18n.t(:marketing_title_1)
+      %p
+        = I18n.t(:marketing_content_1)
+      %p
+        = link_to "/enucatl.html", I18n.t(:read_more), {:class => "btn btn-default", :role => "button"} 
+    / /.col-lg-4
+    .col-lg-4
+      = image_tag "satrapame.jpg", :class => "img-circle", :alt => "Satrapame image", :style => "width: 140px; height: 140px;"
+      %h2 
+        = I18n.t(:marketing_title_2)
+      %p
+        = I18n.t(:marketing_content_2)
+      %p
+        = link_to "/satrapame.html", I18n.t(:read_more), {:class => "btn btn-default", :role => "button"} 
+    / /.col-lg-4
+    .col-lg-4
+      = image_tag "tirannomauro.jpg", :class => "img-circle", :alt => "Tiranno Mauro image", :style => "width: 140px; height: 140px;"
+      %h2 
+        = I18n.t(:marketing_title_3)
+      %p
+        = I18n.t(:marketing_content_3)
+      %p
+        = link_to "/tirannomauro.html", I18n.t(:read_more), {:class => "btn btn-default", :role => "button"} 
+    / /.col-lg-4
+  / /.row
+  / START THE FEATURETTES
+  %hr.featurette-divider/
+  .row.featurette
+    .col-md-7
+      %h2.featurette-heading 
+        = I18n.t(:featurette_title_1)
+      %p.lead
+        = I18n.t(:featurette_content_1)
+    .col-md-5
+      = image_tag "t9.jpg", class: "featurette-image img-responsive", alt: "nokia t9"
+  %hr.featurette-divider/
+  .row.featurette
+    .col-md-5
+      = image_tag "http://i179.photobucket.com/albums/w293/marquis477/azteca3xp0.jpg", class: "featurette-image img-responsive", alt: "Aztec warrior from photobucket - Marquis477"
+    .col-md-7
+      %h2.featurette-heading
+        = I18n.t(:featurette_title_21)
+        %span.text-muted 
+          = I18n.t(:featurette_title_22)
+      %p.lead
+        = I18n.t(:featurette_content_2)
+  %hr.featurette-divider/
+  .row.featurette
+    .col-md-7
+      %h2.featurette-heading
+        = I18n.t(:featurette_title_31)
+        %span.text-muted 
+          = I18n.t(:featurette_title_32)
+      %p.lead
+        = I18n.t(:featurette_content_31)
+        = succeed "." do
+          %a{:href => "http://it.wikipedia.org/wiki/Wikipedia:Bar/Discussioni/Possibile_bufala_in_serie"}
+            = I18n.t(:featurette_content_32)
+    .col-md-5
+      = image_tag "http://upload.wikimedia.org/wikipedia/commons/b/b3/Wikipedia-logo-v2-en.svg", class: "featurette-image img-responsive", alt: "wikipedia"
+  %hr.featurette-divider/

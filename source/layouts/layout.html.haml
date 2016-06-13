@@ -6,9 +6,9 @@
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     %meta{:content => "", :name => "description"}/
     %meta{:content => "", :name => "author"}/
-    = partial "head"
+    = partial "partials/head"
   %body
-    = partial "navbar"
+    = partial "partials/navbar"
     = yield
-    = partial "footer"
-    = partial "javascripts"
+    = partial "partials/footer"
+    = partial "partials/javascripts"

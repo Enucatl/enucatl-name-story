@@ -10,15 +10,13 @@ end
 #   end
 # end
 
-activate :i18n, langs: [:it, :en]
+activate :i18n, langs: [:it, :en], mount_at_root: :it
 
 set :css_dir, 'css'
 
 set :js_dir, 'js'
 
 set :images_dir, 'img'
-
-set :partials_dir, 'partials'
 
 set :haml, { :ugly => true }
 
@@ -43,7 +41,7 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.method = :git
+  deploy.deploy_method = :git
   deploy.build_before = true # default: false
   # Optional Settings
   # deploy.remote   = 'custom-remote' # remote name or git url, default: origin
