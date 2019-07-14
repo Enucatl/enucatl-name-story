@@ -1,0 +1,27 @@
+(function() {
+  $(function() {
+    var normalize_heights;
+    normalize_heights = function() {
+      var items, tallest;
+      items = $("#myCarousel .carousel-caption");
+      items.each(function() {
+        return $(this).css("min-height: 0 px;");
+      });
+      tallest = items.get().reduce(function(previous_value, current) {
+        var height;
+        height = $(current).height();
+        console.log(height);
+        if (height > previous_value) {
+          return height;
+        } else {
+          return previous_value;
+        }
+      }, 0);
+      return items.each(function() {
+        return $(this).css("min-height: " + tallest + " px;");
+      });
+    };
+    return $(window).on("resize orientationchange", normalize_heights);
+  });
+
+}).call(this);

@@ -1,0 +1,14 @@
+(function() {
+  $(function() {
+    return $(".featurette-image").each(function() {
+      var cur_height, cur_width, height, width;
+      cur_height = $(this).height();
+      cur_width = $(this).width();
+      height = $(this).parent().siblings("div").height();
+      width = cur_width * height / cur_height;
+      $(this).css("height", height);
+      return $(this).css("width", width);
+    });
+  });
+
+}).call(this);
