@@ -1,0 +1,13 @@
+<!doctype html>
+{% set t = i18n[locale] %}
+<html lang="{{ locale }}">
+  <head>
+    {% include "head.njk" %}
+  </head>
+  <body>
+    {% include "navbar.njk" %}
+    {{ content | safe }}
+    {% include "footer.njk" %}
+    {% include "scripts.njk" %}
+  </body>
+</html>

@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-middleman deploy
+npm run deploy

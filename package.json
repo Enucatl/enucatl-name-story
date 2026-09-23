@@ -1,0 +1,17 @@
+{
+  "name": "enucatl-name-story",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node --import tsx ./node_modules/@11ty/eleventy/cmd.cjs --config=eleventy.config.ts",
+    "start": "node --import tsx ./node_modules/@11ty/eleventy/cmd.cjs --serve --config=eleventy.config.ts",
+    "deploy": "npm run build && gh-pages --dist _site"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@types/node": "^26.6.2",
+    "gh-pages": "^6.3.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
