@@ -18,7 +18,13 @@
             %li
               = link_to I18n.t(:tyrant), "./tirannomauro.html"
           %ul.nav.navbar-nav.navbar-right
-            %li
-              = link_to "it", "/index.html", locale: :it
-            %li
-              = link_to "en", "/index.html", locale: :en
+            - if I18n.locale == :en
+              %li
+                %a{:href => "../index.html"} it
+              %li
+                %a{:href => "index.html"} en
+            - else
+              %li
+                %a{:href => "index.html"} it
+              %li
+                %a{:href => "en/index.html"} en
